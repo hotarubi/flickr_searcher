@@ -1,0 +1,3 @@
+flickr searcher
+==========
+Web app that allows users to search for, and view, Flickr photos.
