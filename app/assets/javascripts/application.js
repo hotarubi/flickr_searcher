@@ -15,4 +15,6 @@
 //= require turbolinks
 //= require twitter/bootstrap
 //= require bootstrap-datepicker
+//= require jquery.blueimp-gallery.min
+//= require bootstrap-image-gallery
 //= require_tree .
