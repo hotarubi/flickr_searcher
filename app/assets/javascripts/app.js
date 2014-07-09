@@ -1,5 +1,5 @@
 $(function() {
   'use strict';
 
-  $('.input-daterange').datepicker({format: 'dd/mm/yyyy'});
+  $('.input-daterange').datepicker({format: 'yyyy-mm-dd'});
 });
