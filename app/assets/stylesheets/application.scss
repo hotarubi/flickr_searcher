@@ -18,21 +18,23 @@
  @import "bootstrap-image-gallery";
 
  #search-container {
-  padding: 14px 90px;
-  .search-query { width: 30em; }
+  padding: 1% 8%;
+  .search-query { width: 45%; }
   .toggle-options { padding-top: 1em; }
  }
 #search-options {
-  width: 50em;
+  width: 100%;
 }
 #daterange-search {
   display: inline-block;
-  width: 25em;
-  .input-sm { width: 7em; }
+  width: 56%;
+  .input-sm { width: 6em; }
   margin: 1em 1em;
 }
 #daterange-order {
+  width: 36%;
   display: inline-block;
+  select { width: 10em; }
 }
 .float-right { float: right; }
 .float-left { float: left; }
