@@ -1,0 +1,20 @@
+#search-container
+  %form(class="form-search")
+    .accordion
+      %input(type="text" class="input-medium search-query" placeholder="search keywords")
+      %button(type="submit" class="btn") Search
+      %span.float-right.toggle-options
+        %a(data-toggle="collapse" href="#search-options")
+          More search options >>
+      #search-options.collapse
+        #daterange-search.input-daterange.input-group
+          %span.input-group-addon Posted from
+          %input.input-sm.form-control{name: "start", type: "text"}
+          %span.input-group-addon to
+          %input.input-sm.form-control{name: "end", type: "text"}
+        #daterange-order
+          %label Sorted by
+          %select
+            %option{value: "0"} test 1
+            %option{value: "1200"} test 2
+            %option{value: "6251"} test 3

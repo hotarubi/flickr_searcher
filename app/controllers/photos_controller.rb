@@ -11,10 +11,10 @@ class PhotosController < ApplicationController
   private
 
   def set_photo
-    @photos = []
+    @photos = Flickr::Searcher.search search_params
   end
 
-  def photo_params
-    params[:photo]
+  def search_params
+    params[:search] || {}
   end
 end

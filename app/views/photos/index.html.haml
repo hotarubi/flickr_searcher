@@ -3,50 +3,9 @@
     %i(class="icon-search")
     Find beauty on flickr
 
-#search-container
-  %form(class="form-search")
-    .accordion
-      %input(type="text" class="input-medium search-query" placeholder="search keywords")
-      %button(type="submit" class="btn") Search
-      %span.float-right.toggle-options
-        %a(data-toggle="collapse" href="#search-options")
-          More search options >>
-      #search-options.collapse
-        #daterange-search.input-daterange.input-group
-          %span.input-group-addon Posted from
-          %input.input-sm.form-control{name: "start", type: "text"}
-          %span.input-group-addon to
-          %input.input-sm.form-control{name: "end", type: "text"}
-        #daterange-order
-          %label Sorted by
-          %select
-            %option{value: "0"} test 1
-            %option{value: "1200"} test 2
-            %option{value: "6251"} test 3
+= render 'search_form'
 
 #links
-  %a{"data-gallery" => "", href: "http://farm4.static.flickr.com/3888/14604865715_272dc315c6_b.jpg", title: "canal in the winter, dc [_DSF2885]"}
-    %img{src: "http://farm4.static.flickr.com/3888/14604865715_272dc315c6_q.jpg"}/
-  %a{"data-gallery" => "", href: "http://farm4.static.flickr.com/3885/14626840083_c9fb12eb1e_b.jpg", title: "The gate (high tide version)"}
-    %img{src: "http://farm4.static.flickr.com/3885/14626840083_c9fb12eb1e_q.jpg"}/
-  %a{"data-gallery" => "", href: "http://farm3.static.flickr.com/2933/14603631185_2b1231b9f3_b.jpg", title: "Beautiful Stavanger"}
-    %img{src: "http://farm3.static.flickr.com/2933/14603631185_2b1231b9f3_q.jpg"}/
+  = render 'list'
 
-/ The Bootstrap Image Gallery lightbox, should be a child element of the document body
-#blueimp-gallery.blueimp-gallery.blueimp-gallery-controls(data-useBootstrapModal='0')
-  / The container for the modal slides
-  .slides
-  / Controls for the borderless lightbox
-  %h3.title
-  %a.prev ‹
-  %a.next ›
-  %a.close ×
-  %ol.indicator
-  / The modal dialog, which will be used to wrap the lightbox content
-  .modal.fade
-    .modal-dialog
-      .modal-content
-        .modal-header
-          %h4.modal-title
-        .modal-body.next
-        .modal-footer
+= render 'modal'
