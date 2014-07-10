@@ -1,20 +1,17 @@
 #search-container
-  %form(class="form-search")
+  = form_tag('/photos/search', remote: true, class: "form-search") do
     .accordion
-      %input(type="text" class="input-medium search-query" placeholder="search keywords")
-      %button(type="submit" class="btn") Search
+      = text_field_tag 'search[text]', nil, class: "input-medium search-query", placeholder: "search keywords"
+      = button_tag 'Search',  data: { disable_with: "Loading..." }
       %span.float-right.toggle-options
         %a(data-toggle="collapse" href="#search-options")
           More search options >>
       #search-options.collapse
         #daterange-search.input-daterange.input-group
           %span.input-group-addon Posted from
-          %input.input-sm.form-control{name: "start", type: "text"}
+          = text_field_tag 'search[min_upload_date]', nil, class: "input-sm form-control", placeholder: "start date"
           %span.input-group-addon to
-          %input.input-sm.form-control{name: "end", type: "text"}
+          = text_field_tag 'search[max_upload_date]', nil, class: "input-sm form-control", placeholder: "end date"
         #daterange-order
           %label Sorted by
-          %select
-            %option{value: "0"} test 1
-            %option{value: "1200"} test 2
-            %option{value: "6251"} test 3
+          = select_tag "search[sort]", search_sort_opts
