@@ -1,17 +1,17 @@
 class PhotosController < ApplicationController
-  before_action :set_photo, only: [:show]
+  before_action :set_photo
 
   def index
-    @photos = []
   end
 
-  def show
+  def search
+    render partial: 'list'
   end
 
   private
 
   def set_photo
-    @photo = nil# Photo.find(params[:id])
+    @photos = []
   end
 
   def photo_params
