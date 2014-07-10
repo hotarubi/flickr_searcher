@@ -9,11 +9,12 @@ class PhotosController < ApplicationController
   end
 
   private
-    def set_photo
-      @photo = nil# Photo.find(params[:id])
-    end
 
-    def photo_params
-      params[:photo]
-    end
+  def set_photo
+    @photo = nil# Photo.find(params[:id])
+  end
+
+  def photo_params
+    params[:photo]
+  end
 end

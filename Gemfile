@@ -12,6 +12,10 @@ gem 'haml-rails'
 gem 'flickraw'
 gem 'twitter-bootstrap-rails'
 
+group :development, :test do
+  gem 'byebug'
+end
+
 group :development do
   gem 'spring'
   gem 'awesome_print'
