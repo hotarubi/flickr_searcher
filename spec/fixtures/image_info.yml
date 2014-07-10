@@ -1,0 +1,691 @@
+---
+- - id: '14615978444'
+    secret: 0b3cd5f6c7
+    server: '3918'
+    farm: 4
+    dateuploaded: '1404975470'
+    isfavorite: 0
+    license: '0'
+    safety_level: '0'
+    rotation: 0
+    originalsecret: 9949419f06
+    originalformat: jpg
+    owner: !ruby/object:FlickRaw::Response
+      h:
+        nsid: 64545120@N08
+        username: Open University Skolkovo
+        realname: ''
+        location: ''
+        iconserver: '7351'
+        iconfarm: 8
+        path_alias: openusk
+      flickr_type: owner
+    title: 2014-07-04-opuscamp_DSC_6338
+    description: ''
+    visibility: !ruby/object:FlickRaw::Response
+      h:
+        ispublic: 1
+        isfriend: 0
+        isfamily: 0
+      flickr_type: visibility
+    dates: !ruby/object:FlickRaw::Response
+      h:
+        posted: '1404975470'
+        taken: '2014-07-04 17:59:04'
+        takengranularity: '0'
+        lastupdate: '1404975561'
+      flickr_type: dates
+    views: '23'
+    editability: !ruby/object:FlickRaw::Response
+      h:
+        cancomment: 0
+        canaddmeta: 0
+      flickr_type: editability
+    publiceditability: !ruby/object:FlickRaw::Response
+      h:
+        cancomment: 1
+        canaddmeta: 0
+      flickr_type: publiceditability
+    usage: !ruby/object:FlickRaw::Response
+      h:
+        candownload: 1
+        canblog: 0
+        canprint: 0
+        canshare: 1
+      flickr_type: usage
+    comments: '0'
+    notes: !ruby/object:FlickRaw::ResponseList
+      h:
+        note: []
+      flickr_type: notes
+      a: []
+    people: !ruby/object:FlickRaw::Response
+      h:
+        haspeople: 0
+      flickr_type: people
+    tags: !ruby/object:FlickRaw::ResponseList
+      h:
+        tag:
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14615978444-3876
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: open
+            _content: open
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14615978444-3311
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: university
+            _content: university
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14615978444-46019732
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: skolkovo
+            _content: skolkovo
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14615978444-59866
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: opus
+            _content: opus
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14615978444-24163
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: sk
+            _content: sk
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14615978444-222653194
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: opuscamp
+            _content: opuscamp
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14615978444-245
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: summer
+            _content: summer
+            machine_tag: false
+          flickr_type: tag
+      flickr_type: tags
+      a:
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14615978444-3876
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: open
+          _content: open
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14615978444-3311
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: university
+          _content: university
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14615978444-46019732
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: skolkovo
+          _content: skolkovo
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14615978444-59866
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: opus
+          _content: opus
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14615978444-24163
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: sk
+          _content: sk
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14615978444-222653194
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: opuscamp
+          _content: opuscamp
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14615978444-245
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: summer
+          _content: summer
+          machine_tag: false
+        flickr_type: tag
+    urls: !ruby/object:FlickRaw::ResponseList
+      h:
+        url:
+        - !ruby/object:FlickRaw::Response
+          h:
+            type: photopage
+            _content: https://www.flickr.com/photos/openusk/14615978444/
+          flickr_type: url
+      flickr_type: urls
+      a:
+      - !ruby/object:FlickRaw::Response
+        h:
+          type: photopage
+          _content: https://www.flickr.com/photos/openusk/14615978444/
+        flickr_type: url
+    media: photo
+  - photo
+- - id: '14431359610'
+    secret: 35a9369879
+    server: '5540'
+    farm: 6
+    dateuploaded: '1404975541'
+    isfavorite: 0
+    license: '0'
+    safety_level: '0'
+    rotation: 0
+    originalsecret: f7ff544167
+    originalformat: jpg
+    owner: !ruby/object:FlickRaw::Response
+      h:
+        nsid: 64545120@N08
+        username: Open University Skolkovo
+        realname: ''
+        location: ''
+        iconserver: '7351'
+        iconfarm: 8
+        path_alias: openusk
+      flickr_type: owner
+    title: 2014-07-04-opuscamp_DSC_6805
+    description: ''
+    visibility: !ruby/object:FlickRaw::Response
+      h:
+        ispublic: 1
+        isfriend: 0
+        isfamily: 0
+      flickr_type: visibility
+    dates: !ruby/object:FlickRaw::Response
+      h:
+        posted: '1404975541'
+        taken: '2014-07-04 19:33:36'
+        takengranularity: '0'
+        lastupdate: '1404975561'
+      flickr_type: dates
+    views: '35'
+    editability: !ruby/object:FlickRaw::Response
+      h:
+        cancomment: 0
+        canaddmeta: 0
+      flickr_type: editability
+    publiceditability: !ruby/object:FlickRaw::Response
+      h:
+        cancomment: 1
+        canaddmeta: 0
+      flickr_type: publiceditability
+    usage: !ruby/object:FlickRaw::Response
+      h:
+        candownload: 1
+        canblog: 0
+        canprint: 0
+        canshare: 1
+      flickr_type: usage
+    comments: '0'
+    notes: !ruby/object:FlickRaw::ResponseList
+      h:
+        note: []
+      flickr_type: notes
+      a: []
+    people: !ruby/object:FlickRaw::Response
+      h:
+        haspeople: 0
+      flickr_type: people
+    tags: !ruby/object:FlickRaw::ResponseList
+      h:
+        tag:
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14431359610-3876
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: open
+            _content: open
+            machine_tag: 0
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14431359610-3311
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: university
+            _content: university
+            machine_tag: 0
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14431359610-46019732
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: skolkovo
+            _content: skolkovo
+            machine_tag: 0
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14431359610-59866
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: opus
+            _content: opus
+            machine_tag: 0
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14431359610-24163
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: sk
+            _content: sk
+            machine_tag: 0
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14431359610-222653194
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: opuscamp
+            _content: opuscamp
+            machine_tag: 0
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14431359610-245
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: summer
+            _content: summer
+            machine_tag: 0
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14431359610-249
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: camp
+            _content: camp
+            machine_tag: 0
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14431359610-265750
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: '2014'
+            _content: '2014'
+            machine_tag: 0
+          flickr_type: tag
+      flickr_type: tags
+      a:
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14431359610-3876
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: open
+          _content: open
+          machine_tag: 0
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14431359610-3311
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: university
+          _content: university
+          machine_tag: 0
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14431359610-46019732
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: skolkovo
+          _content: skolkovo
+          machine_tag: 0
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14431359610-59866
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: opus
+          _content: opus
+          machine_tag: 0
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14431359610-24163
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: sk
+          _content: sk
+          machine_tag: 0
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14431359610-222653194
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: opuscamp
+          _content: opuscamp
+          machine_tag: 0
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14431359610-245
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: summer
+          _content: summer
+          machine_tag: 0
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14431359610-249
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: camp
+          _content: camp
+          machine_tag: 0
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14431359610-265750
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: '2014'
+          _content: '2014'
+          machine_tag: 0
+        flickr_type: tag
+    urls: !ruby/object:FlickRaw::ResponseList
+      h:
+        url:
+        - !ruby/object:FlickRaw::Response
+          h:
+            type: photopage
+            _content: https://www.flickr.com/photos/openusk/14431359610/
+          flickr_type: url
+      flickr_type: urls
+      a:
+      - !ruby/object:FlickRaw::Response
+        h:
+          type: photopage
+          _content: https://www.flickr.com/photos/openusk/14431359610/
+        flickr_type: url
+    media: photo
+  - photo
+- - id: '14614803951'
+    secret: c0beddd3b6
+    server: '3897'
+    farm: 4
+    dateuploaded: '1404975553'
+    isfavorite: 0
+    license: '0'
+    safety_level: '0'
+    rotation: 0
+    originalsecret: 2b057190b4
+    originalformat: jpg
+    owner: !ruby/object:FlickRaw::Response
+      h:
+        nsid: 64545120@N08
+        username: Open University Skolkovo
+        realname: ''
+        location: ''
+        iconserver: '7351'
+        iconfarm: 8
+        path_alias: openusk
+      flickr_type: owner
+    title: 2014-07-04-opuscamp_DSC_6864
+    description: ''
+    visibility: !ruby/object:FlickRaw::Response
+      h:
+        ispublic: 1
+        isfriend: 0
+        isfamily: 0
+      flickr_type: visibility
+    dates: !ruby/object:FlickRaw::Response
+      h:
+        posted: '1404975553'
+        taken: '2014-07-04 19:40:06'
+        takengranularity: '0'
+        lastupdate: '1404975561'
+      flickr_type: dates
+    views: '16'
+    editability: !ruby/object:FlickRaw::Response
+      h:
+        cancomment: 0
+        canaddmeta: 0
+      flickr_type: editability
+    publiceditability: !ruby/object:FlickRaw::Response
+      h:
+        cancomment: 1
+        canaddmeta: 0
+      flickr_type: publiceditability
+    usage: !ruby/object:FlickRaw::Response
+      h:
+        candownload: 1
+        canblog: 0
+        canprint: 0
+        canshare: 1
+      flickr_type: usage
+    comments: '0'
+    notes: !ruby/object:FlickRaw::ResponseList
+      h:
+        note: []
+      flickr_type: notes
+      a: []
+    people: !ruby/object:FlickRaw::Response
+      h:
+        haspeople: 0
+      flickr_type: people
+    tags: !ruby/object:FlickRaw::ResponseList
+      h:
+        tag:
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14614803951-3876
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: open
+            _content: open
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14614803951-3311
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: university
+            _content: university
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14614803951-46019732
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: skolkovo
+            _content: skolkovo
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14614803951-59866
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: opus
+            _content: opus
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14614803951-24163
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: sk
+            _content: sk
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14614803951-222653194
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: opuscamp
+            _content: opuscamp
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14614803951-245
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: summer
+            _content: summer
+            machine_tag: false
+          flickr_type: tag
+        - !ruby/object:FlickRaw::Response
+          h:
+            id: 64452307-14614803951-249
+            author: 64545120@N08
+            authorname: Open University Skolkovo
+            raw: camp
+            _content: camp
+            machine_tag: false
+          flickr_type: tag
+      flickr_type: tags
+      a:
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14614803951-3876
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: open
+          _content: open
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14614803951-3311
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: university
+          _content: university
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14614803951-46019732
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: skolkovo
+          _content: skolkovo
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14614803951-59866
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: opus
+          _content: opus
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14614803951-24163
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: sk
+          _content: sk
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14614803951-222653194
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: opuscamp
+          _content: opuscamp
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14614803951-245
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: summer
+          _content: summer
+          machine_tag: false
+        flickr_type: tag
+      - !ruby/object:FlickRaw::Response
+        h:
+          id: 64452307-14614803951-249
+          author: 64545120@N08
+          authorname: Open University Skolkovo
+          raw: camp
+          _content: camp
+          machine_tag: false
+        flickr_type: tag
+    urls: !ruby/object:FlickRaw::ResponseList
+      h:
+        url:
+        - !ruby/object:FlickRaw::Response
+          h:
+            type: photopage
+            _content: https://www.flickr.com/photos/openusk/14614803951/
+          flickr_type: url
+      flickr_type: urls
+      a:
+      - !ruby/object:FlickRaw::Response
+        h:
+          type: photopage
+          _content: https://www.flickr.com/photos/openusk/14614803951/
+        flickr_type: url
+    media: photo
+  - photo

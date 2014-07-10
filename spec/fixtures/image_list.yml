@@ -1,0 +1,79 @@
+---
+- page: 1
+  pages: 5618
+  perpage: 3
+  total: '16854'
+  photo:
+  - !ruby/object:FlickRaw::Response
+    h:
+      id: '14615978444'
+      owner: 64545120@N08
+      secret: 0b3cd5f6c7
+      server: '3918'
+      farm: 4
+      title: 2014-07-04-opuscamp_DSC_6338
+      ispublic: 1
+      isfriend: 0
+      isfamily: 0
+    flickr_type: photo
+  - !ruby/object:FlickRaw::Response
+    h:
+      id: '14431359610'
+      owner: 64545120@N08
+      secret: 35a9369879
+      server: '5540'
+      farm: 6
+      title: 2014-07-04-opuscamp_DSC_6805
+      ispublic: 1
+      isfriend: 0
+      isfamily: 0
+    flickr_type: photo
+  - !ruby/object:FlickRaw::Response
+    h:
+      id: '14614803951'
+      owner: 64545120@N08
+      secret: c0beddd3b6
+      server: '3897'
+      farm: 4
+      title: 2014-07-04-opuscamp_DSC_6864
+      ispublic: 1
+      isfriend: 0
+      isfamily: 0
+    flickr_type: photo
+- photos
+- - !ruby/object:FlickRaw::Response
+    h:
+      id: '14615978444'
+      owner: 64545120@N08
+      secret: 0b3cd5f6c7
+      server: '3918'
+      farm: 4
+      title: 2014-07-04-opuscamp_DSC_6338
+      ispublic: 1
+      isfriend: 0
+      isfamily: 0
+    flickr_type: photo
+  - !ruby/object:FlickRaw::Response
+    h:
+      id: '14431359610'
+      owner: 64545120@N08
+      secret: 35a9369879
+      server: '5540'
+      farm: 6
+      title: 2014-07-04-opuscamp_DSC_6805
+      ispublic: 1
+      isfriend: 0
+      isfamily: 0
+    flickr_type: photo
+  - !ruby/object:FlickRaw::Response
+    h:
+      id: '14614803951'
+      owner: 64545120@N08
+      secret: c0beddd3b6
+      server: '3897'
+      farm: 4
+      title: 2014-07-04-opuscamp_DSC_6864
+      ispublic: 1
+      isfriend: 0
+      isfamily: 0
+    flickr_type: photo
