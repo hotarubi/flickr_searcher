@@ -17,7 +17,6 @@ rerun.txt
 pickle-email-*.html
 .project
 config/initializers/secret_token.rb
-bin/rails
 .DS_Store
 /config/database.yml
 /public/assets/*
