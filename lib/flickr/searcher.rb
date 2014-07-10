@@ -26,7 +26,8 @@ module Flickr
         { text: '',
           min_upload_date: 1.month.ago.to_date.to_s,
           max_upload_date: Date.today.to_s,
-          sort: 'interestingness-desc'
+          sort: 'interestingness-desc',
+          per_page: 21
         }
       end
     end

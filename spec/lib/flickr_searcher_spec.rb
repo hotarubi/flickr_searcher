@@ -21,7 +21,8 @@ describe Flickr::Searcher do
           { text: 'winter',
             min_upload_date: Date.yesterday.to_s,
             max_upload_date: Date.today.to_s,
-            sort: 'relevance'
+            sort: 'relevance',
+            per_page: 21
           }
         end
         it { is_expected.to receive(:search).with(params) }
@@ -32,7 +33,8 @@ describe Flickr::Searcher do
           { text: '',
             min_upload_date: Date.yesterday.strftime('%d/%m/%Y'),
             max_upload_date: Date.today.strftime('%d/%m/%Y'),
-            sort: 'temperature'
+            sort: 'temperature',
+            per_page: 21
           }
         end
         it { is_expected.to receive(:search).with(default_params) }
