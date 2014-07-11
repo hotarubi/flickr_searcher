@@ -14,6 +14,10 @@ gem 'flickraw'
 gem 'memoist'
 gem 'twitter-bootstrap-rails'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :development, :test do
   gem 'byebug'
 end
