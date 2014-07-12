@@ -15,3 +15,15 @@
         #daterange-order
           %label Sorted by
           = select_tag "search[sort]", search_sort_opts
+      .pagination.pagination-centered
+        %ul
+          %li
+            %a{href: "#"} ←
+          %li.active
+            %a{href: "#"} 10
+          %li.disabled
+            %a{href: "#"} ...
+          %li
+            %a{href: "#"} 20
+          %li
+            %a{href: "#"} →

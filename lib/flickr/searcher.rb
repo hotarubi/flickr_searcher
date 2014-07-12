@@ -10,8 +10,7 @@ module Flickr
         response_list = flickr.photos.search(sanitize(params))
         return [] unless response_list.present?
         response_list.map do |resp|
-          info = flickr.photos.getInfo photo_id: resp['id']
-          { square: FlickRaw.url_q(info), large: FlickRaw.url_b(info) }
+          { square: FlickRaw.url_q(resp), large: FlickRaw.url_b(resp) }
         end
       end
 

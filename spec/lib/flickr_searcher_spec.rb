@@ -11,8 +11,10 @@ describe Flickr::Searcher do
       subject { photos }
       after { Flickr::Searcher.search params }
 
-      context "if parameters not including any key" do
-        let(:params) { {} }
+      context "if parameters not including any search text" do
+        let(:params) do
+          { max_upload_date: Date.today.to_s }
+        end
         it { is_expected.to receive(:search).with(default_params) }
       end
 
@@ -43,13 +45,8 @@ describe Flickr::Searcher do
 
     context "when handling API response" do
       let(:list) do
-        dumped_list = YAML.load(ERB.new(File.read("#{Rails.root}/spec/fixtures/image_list.yml")).result)
-        FlickRaw::ResponseList.new(*dumped_list)
-      end
-
-      let(:info) do
-        dumped_info = YAML.load(ERB.new(File.read("#{Rails.root}/spec/fixtures/image_info.yml")).result)
-        dumped_info.map {|i| FlickRaw::Response.new(*i) }
+        l = YAML.load(ERB.new(File.read("#{Rails.root}/spec/fixtures/image_list.yml")).result)
+        FlickRaw::ResponseList.new(l[0], l[1], l[2].map {|e| FlickRaw::Response.new(e.instance_variable_get(:@h), 'photo')})
       end
 
       let(:urls) do
@@ -58,11 +55,10 @@ describe Flickr::Searcher do
 
       before do
         allow(photos).to receive(:search).and_return(list)
-        allow(photos).to receive(:getInfo).and_return(*info)
       end
 
       it "should return sorted urls" do
-        expect(Flickr::Searcher.search({})).to eq(urls)
+        expect(Flickr::Searcher.search({text: 'bird'})).to eq(urls)
       end
     end
 
