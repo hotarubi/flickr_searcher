@@ -1,6 +1,8 @@
 class PhotosController < ApplicationController
   before_action :set_photo
 
+  helper_method :current_page, :total_pages
+
   def index
   end
 
@@ -16,6 +18,14 @@ class PhotosController < ApplicationController
   end
 
   def search_params
-    params[:search] || { page: 1 }
+    (params[:search] || {}).merge page: current_page
+  end
+
+  def current_page
+    [[(params[:search].try(:[], :page) || 1).to_i, 1].max, @info[:pages]].min
+  end
+
+  def total_pages
+    @info[:pages]
   end
 end

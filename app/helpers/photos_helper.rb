@@ -8,26 +8,37 @@ module PhotosHelper
     )
   end
 
-  def current_page
-    (params[:page] || 1).to_i
-  end
-
   def page_tag(html, page, opts={})
     content_tag :li, opts do
-      content_tag :a, html, 'class' => 'pagination-link', 'data-page' => page
+      content_tag :a, html,
+        'href' => '#',
+        'class' => 'pagination-link',
+        'data-page' => page
     end
   end
 
   def page_list
-    step = 5
-    first = [current_page - step, 1].max
-    last = [current_page + step, @info[:pages]].min
-    return '' if first == last
-    content = page_tag('←', [first - step, 1].max)
-    (first..last).each do |p|
+    return '' if first_page == last_page
+    content = page_tag('«', 1)
+    content << page_tag('←', [first_page - page_step - 1, 1].max)
+    (first_page..last_page).each do |p|
       content << page_tag(p, p, current_page == p ? {class: 'active'} : {})
     end
-    content << page_tag('→', [last + step, @info[:pages]].min)
+    content << page_tag('→', [last_page + page_step + 1, total_pages].min)
+    content << page_tag('»', total_pages)
     content.html_safe
+  end
+
+  private
+  def page_step
+    5
+  end
+
+  def first_page
+    [current_page - page_step, 1].max
+  end
+
+  def last_page
+    [current_page + page_step, total_pages].min
   end
 end
