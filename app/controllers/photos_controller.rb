@@ -11,10 +11,11 @@ class PhotosController < ApplicationController
   private
 
   def set_photo
+    @info = { page: 1, pages: 50 }
     @photos = Flickr::Searcher.search search_params
   end
 
   def search_params
-    params[:search] || {}
+    params[:search] || { page: 1 }
   end
 end
