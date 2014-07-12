@@ -4,7 +4,6 @@ module Flickr
     SORT_FORMAT = /^(date-posted-asc|date-posted-desc|interestingness-desc|relevance)$/
 
     class << self
-      extend Memoist
 
       def search(params = {})
         response_list = flickr.photos.search(sanitize(params))
@@ -13,8 +12,6 @@ module Flickr
           { square: FlickRaw.url_q(resp), large: FlickRaw.url_b(resp) }
         end
       end
-
-      memoize :search
 
       private
       def sanitize(params)
