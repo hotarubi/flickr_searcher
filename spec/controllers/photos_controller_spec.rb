@@ -1,9 +1,6 @@
 describe PhotosController, :type => :controller do
-  let(:photos) { double("photos") }
   before do
-    flickr
-    allow($flickraw).to receive(:photos).and_return(photos)
-    allow(photos).to receive(:search).and_return([])
+    allow(Flickr::Searcher).to receive(:search).and_return({photos: [], info: {}})
   end
 
   describe "GET #index" do

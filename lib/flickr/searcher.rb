@@ -8,9 +8,10 @@ module Flickr
       def search(params = {})
         response_list = flickr.photos.search(sanitize(params))
         return [] unless response_list.present?
-        response_list.map do |resp|
+        photos = response_list.map do |resp|
           { square: FlickRaw.url_q(resp), large: FlickRaw.url_b(resp) }
         end
+        { info: response_list.instance_variable_get(:@h).except('photo'), photos: photos}
       end
 
       private

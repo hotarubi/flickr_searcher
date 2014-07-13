@@ -44,9 +44,16 @@ describe Flickr::Searcher do
     end
 
     context "when handling API response" do
+      let(:data) do
+        YAML.load(ERB.new(File.read("#{Rails.root}/spec/fixtures/image_list.yml")).result)
+      end
+
       let(:list) do
-        l = YAML.load(ERB.new(File.read("#{Rails.root}/spec/fixtures/image_list.yml")).result)
-        FlickRaw::ResponseList.new(l[0], l[1], l[2].map {|e| FlickRaw::Response.new(e.instance_variable_get(:@h), 'photo')})
+        FlickRaw::ResponseList.new(
+          data[0],
+          data[1],
+          data[2].map {|e| FlickRaw::Response.new(e.instance_variable_get(:@h), 'photo')}
+        )
       end
 
       let(:urls) do
@@ -58,7 +65,11 @@ describe Flickr::Searcher do
       end
 
       it "should return sorted urls" do
-        expect(Flickr::Searcher.search({text: 'bird'})).to eq(urls)
+        expect(Flickr::Searcher.search({text: 'bird'})[:photos]).to eq(urls)
+      end
+
+      it "should return pagination info" do
+        expect(Flickr::Searcher.search({text: 'bird'})[:info]).to eq(data[0].except('photo'))
       end
     end
 

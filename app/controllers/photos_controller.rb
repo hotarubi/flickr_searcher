@@ -13,8 +13,8 @@ class PhotosController < ApplicationController
   private
 
   def set_photo
-    @info = { page: 1, pages: 50 }
-    @photos = Flickr::Searcher.search search_params
+    @photos, @info = Flickr::Searcher.
+      search(search_params).slice(:photos, :info).values
   end
 
   def search_params
@@ -22,10 +22,14 @@ class PhotosController < ApplicationController
   end
 
   def current_page
-    [[(params[:search].try(:[], :page) || 1).to_i, 1].max, @info[:pages]].min
+    [[searched_page, 1].max, total_pages].min
+  end
+
+  def searched_page
+    (params[:search].try(:[], :page) || 1).to_i
   end
 
   def total_pages
-    @info[:pages]
+    @info.try(:[], 'pages') || Float::INFINITY
   end
 end
