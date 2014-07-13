@@ -14,9 +14,15 @@ $(function() {
   bind_pagination_links();
 
   $('.form-search')
-     .bind("ajax:success", function(evt, data, status, xhr){
-       var list = $('#links');
-       list.html(xhr.responseText);
-       bind_pagination_links();
-     });
+    .bind('ajax:before', function() {
+      $('#links').slideUp();
+    })
+    .bind("ajax:success", function(evt, data, status, xhr){
+     var list = $('#links');
+     list.html(xhr.responseText);
+     bind_pagination_links();
+    })
+    .bind('ajax:complete', function() {
+      $('#links').slideDown(1000);
+    });
 });

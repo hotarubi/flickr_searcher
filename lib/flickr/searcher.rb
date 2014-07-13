@@ -1,5 +1,6 @@
 module Flickr
   class Searcher
+    PER_PAGE = 21
     DATE_FORMAT = /^\d{4}-\d{2}-\d{2}$/
     SORT_FORMAT = /^(date-posted-asc|date-posted-desc|interestingness-desc|relevance)$/
 
@@ -28,7 +29,7 @@ module Flickr
           min_upload_date: 1.month.ago.to_date.to_s,
           max_upload_date: Date.today.to_s,
           sort: 'interestingness-desc',
-          per_page: 21
+          per_page: PER_PAGE
         }
       end
     end

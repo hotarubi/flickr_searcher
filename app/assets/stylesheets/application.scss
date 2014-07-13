@@ -17,11 +17,14 @@
  @import "blueimp-gallery.min";
  @import "bootstrap-image-gallery";
 
+.page-header {
+  margin: 2px 0 16px;
+}
 #links {
   padding-left: 4em;
 }
  #search-container {
-  padding: 1% 8%;
+  padding: 0% 8%;
   .search-query { width: 45%; }
   .toggle-options { padding-top: 1em; }
  }
